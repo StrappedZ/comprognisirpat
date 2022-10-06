@@ -1,0 +1,83 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		string ans1;
+		string ans2;
+		string ans3;
+		var subj1 = "Comprog 5";
+		var subj2 = "Filipino sa piling larang!";
+		var lsub1 = "General Math";
+	
+		
+		Console.WriteLine("Hello do you want to know about me? type 'Yes' if you want to know about it.");
+		
+		 ans1 = Console.ReadLine();
+		
+		if(ans1.Equals("Yes"))
+		{
+			Console.WriteLine("My name is Lee Francis Escubio!" + "\n I am 17 years old i am in ICT 102 and today is Oct 6 2022");
+			Console.WriteLine("Do you want to know my favorite subject? Type 'Yes' again if you want to know!!");
+		}
+		
+		else if(ans1.Equals("No")) {
+		    
+		    Console.WriteLine("Okay bye");
+		}
+		
+		
+		else {
+			Console.WriteLine("Ok bye");
+			
+		}
+	
+		
+		
+		 ans2 = Console.ReadLine();
+		
+		if(ans2.Equals("Yes"))
+		   {
+			   Console.WriteLine("My favorie subject are " + subj1 + " And " + subj2);
+			   
+				Console.WriteLine("Do you want to know my least favorite subj? type 'Yes' again if you want to know!");
+		   }
+		
+		
+			else if(ans2.Equals("No")) {
+		    
+		    Console.WriteLine("Okay bye");
+		}
+		
+		
+		else {
+			Console.WriteLine("Ok bye");
+			
+		}
+		
+		ans3 = Console.ReadLine();
+		
+		if(ans3.Equals("Yes"))
+		{
+			Console.WriteLine("My least favorite subject is " + lsub1);	
+		}
+		
+			else if(ans3.Equals("No")) {
+		    
+		    Console.WriteLine("Okay bye");
+		}
+		
+		
+		else {
+			Console.WriteLine("Ok bye");
+			
+		}
+		
+		
+		
+		
+	
+	}
+}
