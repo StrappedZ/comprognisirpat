@@ -1,0 +1,75 @@
+//CHECK IMAGE
+//https://imgur.com/a/DTQHVdQ
+//https://imgur.com/a/4ywNi7L
+
+
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.WriteLine("Do you want addition or subraction? Press '1' if you want to add or press '2' if you want to subract!");
+		String ans = Console.ReadLine();
+		
+		if(ans == "1") {
+			
+			Console.WriteLine("Type your fist number!");
+			int add1 = Convert.ToInt32(Console.ReadLine());
+			
+			Console.WriteLine("Type your second number!");
+			int add2 = Convert.ToInt32(Console.ReadLine());
+			
+			int sum = add1 + add2;
+			Console.WriteLine("The answer is: " + sum);
+			
+		}
+		   
+		
+	
+		
+		else if(ans == "2") {
+			Console.WriteLine("Type your first number");
+			int add3 = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Type your second number");
+			int add4 = Convert.ToInt32(Console.ReadLine());
+
+			int sub = add3 - add4;
+			Console.WriteLine("Here is the answer: " + sub);
+			
+		}
+		
+		else {
+			
+			 Console.WriteLine("WHAT IS U DOIN??");
+		}
+		
+	
+		Console.WriteLine("Do you want to use see something amazing? type 'Yes' if you want");
+		String ansde = Console.ReadLine();
+		
+		if(ansde == "Yes") {
+			
+			Console.WriteLine("Okay first type a number");
+		int bum1 = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Okay then type the second one");
+		int bum2 = Convert.ToInt32(Console.ReadLine());
+			
+			int firstone = bum1 * bum2;
+			int sekand = firstone++;
+			int total = sekand--;
+			
+			Console.WriteLine("Charaann here is the result of da magic: " + total);
+		
+				
+			
+		}
+		
+		
+		
+		
+	}
+}
