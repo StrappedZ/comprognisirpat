@@ -1,0 +1,66 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+using System;
+class HelloWorld {
+  static void Main() {
+      
+     do { 
+    Console.WriteLine("This is a calculator! type 'add' if you want to add, type 'sub' type 'multi' if you want to multiply, 'type 'div' if you want to divied and type'éxit if you want to exit this program!");
+    
+    int firstnum; 
+    int secondnum;
+    
+    Console.WriteLine("Enter your first number: ");
+    firstnum = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Enter your second number: ");
+    secondnum = Convert.ToInt32(Console.ReadLine());
+    
+     Console.WriteLine("Now select what you want to do with these numbers!");
+     string sagotwowo = Console.ReadLine();
+     
+     if (sagotwowo == "exit") {
+         Console.WriteLine("Program will end now!");
+         break;
+     }
+     
+     else if(sagotwowo == "add") {
+         
+         int sagot1 = firstnum + secondnum;
+         Console.WriteLine("Here is your answer! " + sagot1 + "\n" );
+         
+     }
+     
+     
+     else if(sagotwowo == "sub") {
+        int sagot2 = firstnum - secondnum;
+         Console.WriteLine("Here is your answer! " + sagot2 + "\n" );
+         
+     }
+     
+     else if(sagotwowo == "multi") {
+         int sagot3 = firstnum * secondnum;
+         Console.WriteLine("Here is your answer! " + sagot3 + "\n");
+         
+     }
+     
+     else if(sagotwowo == "div") {
+         int sagot4 = firstnum / secondnum;
+         Console.WriteLine("Here is your answer! " + sagot4 + "\n" );
+         
+     }
+     
+        
+    
+    
+    
+     }
+     while (true);
+    
+  }
+}
