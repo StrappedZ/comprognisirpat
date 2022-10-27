@@ -1,0 +1,164 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int unanum;
+		int twonum;
+		int thirdnum;
+		
+		string option1;
+		
+		Console.WriteLine("Calculator ni Idol!");
+		
+		Console.WriteLine("Enter your first number: ");
+		unanum = Convert.ToInt32(Console.ReadLine());
+		
+		Console.WriteLine("Enter your second number: ");
+		twonum = Convert.ToInt32(Console.ReadLine());
+		
+		Console.WriteLine("What operator do you want to use? type 'add' if you want to add type 'sub' if you want to subtract type 'mul' to multiply type 'div' to divide");
+		option1 = Convert.ToString(Console.ReadLine());
+		
+		if ( option1 == "add") {
+			
+			string yeorno1;
+			Console.WriteLine("Do you wan to add a third number?");
+			yeorno1 = Convert.ToString(Console.ReadLine());
+			
+			
+			if (yeorno1 == "Yes") {
+				Console.WriteLine("Add your third number");
+				thirdnum = Convert.ToInt32(Console.ReadLine());
+				
+				int ans1 = unanum + twonum + thirdnum;
+				Console.WriteLine("Your answer is: " + ans1);
+						
+				
+					
+			}
+			
+			else if(yeorno1 == "No") {
+			 Console.WriteLine("Okay calculating");
+				
+				int ans2 = unanum + twonum;
+				
+				Console.WriteLine("Your answer is: " + ans2);
+				
+			}		
+				
+		}
+		
+		 if (option1 == "sub") {
+			
+			string yeorno2;
+			Console.WriteLine("Do you wan to add a third number?");
+			yeorno2 = Convert.ToString(Console.ReadLine());
+			
+			
+			if (yeorno2 == "Yes") {
+				Console.WriteLine("Add your third number");
+				thirdnum = Convert.ToInt32(Console.ReadLine());
+				
+				int ans3 = unanum - twonum - thirdnum;
+				Console.WriteLine("Your answer is: " + ans3);
+				
+						
+				
+					
+			}
+			
+			else if(yeorno2 == "No") {
+			 Console.WriteLine("Okay calculating");
+				
+				int ans4 = unanum - twonum;
+				
+				Console.WriteLine("Your answer is: " + ans4);
+				
+			}
+			
+			
+				
+			}
+		
+		
+		
+		 if (option1 == "mul") {
+			
+			string yeorno3;
+			Console.WriteLine("Do you wan to add a third number?");
+			yeorno3 = Convert.ToString(Console.ReadLine());
+			
+			
+			if (yeorno3 == "Yes") {
+				Console.WriteLine("Add your third number");
+				thirdnum = Convert.ToInt32(Console.ReadLine());
+				
+				int ans5 = unanum * twonum * thirdnum;
+				Console.WriteLine("Your answer is: " + ans5);
+				
+						
+				
+					
+			}
+			
+			else if(yeorno3 == "No") {
+			 Console.WriteLine("Okay calculating");
+				
+				int ans6 = unanum * twonum;
+				
+				Console.WriteLine("Your answer is: " + ans6);
+				
+			}
+			
+			
+				
+			}
+			
+		
+		 if (option1 == "div") {
+			
+			string yeorno4;
+			Console.WriteLine("Do you wan to add a third number?");
+			yeorno4 = Convert.ToString(Console.ReadLine());
+			
+			
+			if (yeorno4 == "Yes") {
+				Console.WriteLine("Add your third number");
+				thirdnum = Convert.ToInt32(Console.ReadLine());
+				
+				int ans7 = unanum / twonum / thirdnum;
+				Console.WriteLine("Your answer is: " + ans7);
+				
+						
+				
+					
+			}
+			
+			else if(yeorno4 == "No") {
+			 Console.WriteLine("Okay calculating");
+				
+				int ans8 = unanum / twonum;
+				
+				Console.WriteLine("Your answer is: " + ans8);
+				
+			}
+			
+			
+				
+			}
+			
+		
+		else if (option1 == "exit") {
+			
+			Console.WriteLine("K bye");
+			
+		}
+		
+	
+		 while (true);
+		
+		
+	}
+}
