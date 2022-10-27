@@ -4,6 +4,7 @@ public class Program
 {
 	public static void Main()
 	{
+	    do {
 		int unanum;
 		int twonum;
 		int thirdnum;
@@ -153,10 +154,11 @@ public class Program
 		else if (option1 == "exit") {
 			
 			Console.WriteLine("K bye");
+			break;
 			
 		}
 		
-	
+	}
 		 while (true);
 		
 		
