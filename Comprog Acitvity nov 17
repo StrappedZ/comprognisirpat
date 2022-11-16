@@ -1,0 +1,84 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+using System;
+class Building {
+    public string Doors {
+        get; set;
+    }
+    
+    public string Windows {
+        get; set;
+    }
+    
+     public string Elevators {
+        get; set;
+    }
+    
+    public int NumOfDoors {
+        get; set;
+    }
+    
+    public int NumOfWindows {
+        get; set;
+    }
+    
+    public int ElevatorCapacity {
+        get; set;
+    }
+    
+    static void Main (string[]args) {
+        
+        Building BuildingProperties = new Building ();
+        
+        BuildingProperties.Doors = "Yes";
+        BuildingProperties.Windows = "Yes";
+        BuildingProperties.Elevators = "Yes";
+        BuildingProperties.NumOfDoors = 15;
+        BuildingProperties.NumOfWindows = 50;
+        BuildingProperties.ElevatorCapacity = 8;
+        do {
+        Console.WriteLine("Hello do you wanna know anything about the building? type 'Yes' to continue tyoe 'Exit' to exit");
+        
+        string uhe = Convert.ToString(Console.ReadLine());
+        
+        if(uhe == "Yes")
+        {
+            Console.WriteLine("Type '1' if you want to know about the building! \n Type '2' If you want to know on how many the doors, windows, and the elavator capacity is!");
+            
+            int ans1 = Convert.ToInt32(Console.ReadLine());
+
+            if(ans1 == 1) {
+                Console.WriteLine("Doors: " + BuildingProperties.Doors + "\n" + "Windows: " + BuildingProperties.Windows + "\n" + "Elevators: " + BuildingProperties.Elevators);
+            }
+            
+            else if (ans1 == 2) {
+                Console.WriteLine("The building has: " + BuildingProperties.NumOfDoors + " Doors" + "\n" + "The building also has: " + BuildingProperties.NumOfWindows + " Windows"+ "\n" + "And the elavator capacity is: " + BuildingProperties.ElevatorCapacity);
+            }
+            
+            else {
+                Console.WriteLine("Try again");
+            }
+
+        }
+        
+        else if(uhe == "Exit"){
+            Console.WriteLine("Okay, bye!");
+            break;
+        }
+        
+        else {
+            Console.WriteLine("Try again!");
+        }
+        
+        
+        }
+        while (true);
+    }
+    
+}
